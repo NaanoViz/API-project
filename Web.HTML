@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>Temperature and Visibility in California </title>
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Smeh Niki">
+    <meta name="description" content="Weather">
+<link rel="stylesheet" href="Man.css">
+
+</head>
+
+<body>
+
+<h1>Weather Conditions Today</h1>
+
+<div class="dividerWave"></div>
+
+<section id="location">
+    <fieldset id="location-options">
+	<legend>Select a location:</legend>
+	<div>
+		<input type="radio" id="Los Angeles" name="location" value="Los Angeles" data-lat="34.0549" data-lng="-118.2426" />
+		<label for="Los Angeles">Los Angeles</label>
+	</div>
+
+	<div>
+		<input type="radio" id="San Francisco" name="location" value="San Francisco" data-lat="37.7749" data-lng="-122.4194" />
+		<label for="San Francisco">San Francisco</label>
+	</div>
+
+	<div>
+		<input type="radio" id="San Diego" name="location" value="San Diego" data-lat="32.7157" data-lng="-117.1611" />
+		<label for="San Diego">San Diego</label>
+	</div>
+
+	<div>
+		<input type="radio" id="tokyo" name="location" value="tokyo" data-lat="35.6764" data-lng="139.6500" />
+		<label for="tokyo">Tokyo</label>
+	</div>
+
+
+</section>
+
+
+<div>
+    <label for="latitude" id="latitudeIdCSS">Latitude: </label>
+    <input type="number" id="latitude" placeholder="Enter Latitude" step="any">
+</div>
+
+<div>
+    <label for="longitude" id="longitudeIdCss">Longitude: </label>
+    <input type="number" id="longitude" placeholder="Enter Longitude" step="any">   
+</div>
+
+<button id="setLocation">Set Location</button>
+
+<section id="Temperature">
+<h2><br>Click below to get the temperature:</h2>
+<ul id="tempArea"></ul> 
+
+<button type="button">Get Temperature</button>
+</section>
+
+<section id="Visibility">
+<h2><br>Click below to get the visibility:</h2>
+<ul id="visibilityDistance"></ul>
+
+<button type="button">Get Visiblity</button>
+</section>
+
+
+
+    
+
+<script src="Web.js"></script>
+
+</body></html>
